@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   compatibilityDate: "2024-11-24",
 
   // Use the correct Tailwind CSS module
@@ -22,6 +22,10 @@ export default defineNuxtConfig({
     },
 
   },
-  
+
+  image:{
+    domains:['https://cdn.dummyjson.com']
+  }
+
 
 });
