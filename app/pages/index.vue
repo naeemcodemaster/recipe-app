@@ -84,6 +84,30 @@ definePageMeta({
 const {data,error} = await useFetch('https://dummyjson.com/recipes?limit=12');
 console.log(data);
 
+useSeoMeta({
+  title: "Nuxtcipes",
+  description: "Recipes for you to cook!",
+  ogTitle: "Nuxtcipes",
+  ogDescription: "Recipes for you to cook!",
+  ogImage: "/nuxt-course-hero.png",
+  ogUrl: `http:localhost:3000`,
+  twitterTitle: "Nuxtcipes",
+  twitterDescription: "Recipes for you to cook!",
+  twitterImage: "/logo.png",
+  twitterCard: "summary",
+});
+useHead({
+  htmlAttrs: {
+    lang: 'en'
+  },
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      href: '/logo.png'
+    }
+  ]
+});
 
 </script>
 <style lang="">
